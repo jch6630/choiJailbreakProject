@@ -8,7 +8,7 @@ const Report = React.lazy(() => import("./pages/Report"))
 
 function Router() {
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/choiJailbreakProject">
             <Suspense fallback={<Loading />}>
                 <Routes>
                     <Route path="/" element={<Main/>} />

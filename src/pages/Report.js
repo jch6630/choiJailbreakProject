@@ -1,9 +1,9 @@
-import React, { Component, useRef, useState, useEffect } from 'react';
-import { render } from 'react-dom';
+import React, { useRef, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SignatureCanvas from 'react-signature-canvas';
 import styled from 'styled-components'
 import { db } from "../firebase"
-import {collection, addDoc, Timestamp, serverTimestamp} from "firebase/firestore"
+import {collection, addDoc} from "firebase/firestore"
 import '../CSS/Signature.css';
 
 const Wrapper = styled.div`
@@ -74,16 +74,17 @@ function Report() {
     }, [signature]);
 
     // 저장 버튼 이벤트 함수 만들기
+    const navigate = useNavigate(); // navigate 훅을 사용하여 이동
     const handleSubmit = ()=>{
         const docRef = addDoc(collection(db, "List"),state);
         console.log(state);
         alert("저장성공");
+        navigate('/List'); // /List 경로로 이동
     }
 
     // 취소 버튼 이벤트 함수 만들기
     const handleCancle = ()=>{
-        console.log(state);
-        alert("취소");
+        window.close();
     }
     
     return (
