@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/742.ee59d8f8.chunk.css","mappings":"AAAA,WAGI,qBAAuB,CAFvB,aAAc,CAId,WAAY,CAHZ,WAAY,CAEZ,UAEF","sources":["CSS/Signature.css"],"sourcesContent":[".signature {\r\n    display: block;\r\n    margin: auto;\r\n    border: 2px solid black;\r\n    width: 45vw;\r\n    height: 45vw;\r\n  }"],"names":[],"sourceRoot":""}
