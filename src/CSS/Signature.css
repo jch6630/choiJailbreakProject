@@ -1,7 +1,7 @@
 .signature {
-    display: block;
-    margin: auto;
-    border: 2px solid black;
-    width: 45vw;
-    height: 45vw;
-  }
+  display: block;
+  margin: 0;
+  border: 2px solid black;
+  width: 70%;
+  aspect-ratio: 1;
+}
