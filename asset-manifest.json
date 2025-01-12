@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/choiJailbreakProject/static/css/main.76fb9889.css",
-    "main.js": "/choiJailbreakProject/static/js/main.677d6605.js",
-    "static/js/722.d14e21e9.chunk.js": "/choiJailbreakProject/static/js/722.d14e21e9.chunk.js",
-    "static/js/467.cd3e5375.chunk.js": "/choiJailbreakProject/static/js/467.cd3e5375.chunk.js",
+    "main.js": "/choiJailbreakProject/static/js/main.bb2c77aa.js",
+    "static/js/722.559998c2.chunk.js": "/choiJailbreakProject/static/js/722.559998c2.chunk.js",
+    "static/js/773.43d3282f.chunk.js": "/choiJailbreakProject/static/js/773.43d3282f.chunk.js",
+    "static/js/467.49552407.chunk.js": "/choiJailbreakProject/static/js/467.49552407.chunk.js",
     "static/css/742.26d8d43a.chunk.css": "/choiJailbreakProject/static/css/742.26d8d43a.chunk.css",
-    "static/js/742.a3a3b050.chunk.js": "/choiJailbreakProject/static/js/742.a3a3b050.chunk.js",
+    "static/js/742.395cde25.chunk.js": "/choiJailbreakProject/static/js/742.395cde25.chunk.js",
     "static/js/488.f5c4bf89.chunk.js": "/choiJailbreakProject/static/js/488.f5c4bf89.chunk.js",
     "static/js/213.97274ae4.chunk.js": "/choiJailbreakProject/static/js/213.97274ae4.chunk.js",
     "static/js/455.a886272a.chunk.js": "/choiJailbreakProject/static/js/455.a886272a.chunk.js",
@@ -14,11 +15,12 @@
     "static/js/839.d250a644.chunk.js": "/choiJailbreakProject/static/js/839.d250a644.chunk.js",
     "index.html": "/choiJailbreakProject/index.html",
     "main.76fb9889.css.map": "/choiJailbreakProject/static/css/main.76fb9889.css.map",
-    "main.677d6605.js.map": "/choiJailbreakProject/static/js/main.677d6605.js.map",
-    "722.d14e21e9.chunk.js.map": "/choiJailbreakProject/static/js/722.d14e21e9.chunk.js.map",
-    "467.cd3e5375.chunk.js.map": "/choiJailbreakProject/static/js/467.cd3e5375.chunk.js.map",
+    "main.bb2c77aa.js.map": "/choiJailbreakProject/static/js/main.bb2c77aa.js.map",
+    "722.559998c2.chunk.js.map": "/choiJailbreakProject/static/js/722.559998c2.chunk.js.map",
+    "773.43d3282f.chunk.js.map": "/choiJailbreakProject/static/js/773.43d3282f.chunk.js.map",
+    "467.49552407.chunk.js.map": "/choiJailbreakProject/static/js/467.49552407.chunk.js.map",
     "742.26d8d43a.chunk.css.map": "/choiJailbreakProject/static/css/742.26d8d43a.chunk.css.map",
-    "742.a3a3b050.chunk.js.map": "/choiJailbreakProject/static/js/742.a3a3b050.chunk.js.map",
+    "742.395cde25.chunk.js.map": "/choiJailbreakProject/static/js/742.395cde25.chunk.js.map",
     "488.f5c4bf89.chunk.js.map": "/choiJailbreakProject/static/js/488.f5c4bf89.chunk.js.map",
     "213.97274ae4.chunk.js.map": "/choiJailbreakProject/static/js/213.97274ae4.chunk.js.map",
     "455.a886272a.chunk.js.map": "/choiJailbreakProject/static/js/455.a886272a.chunk.js.map",
@@ -28,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.76fb9889.css",
-    "static/js/main.677d6605.js"
+    "static/js/main.bb2c77aa.js"
   ]
 }
