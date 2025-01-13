@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +36,18 @@ const StyledText = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 200px;
+    padding: 10px 0;
+  }
+`;
+
 const StyledButton = styled.button`
   background-color: #8339b3;
   color: #fff;
@@ -44,7 +56,7 @@ const StyledButton = styled.button`
   padding: 12px 0;
   font-size: 16px;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   transition: background-color 0.3s;
 
   &:hover {
@@ -64,9 +76,9 @@ function Main() {
         <StyledText>
           안녕하세요. 당신은 최정원의 탄원서 동의를 희망하십니까?
         </StyledText>
-        <Link to="/Report" style={{ width: '100%' }}>
+        <StyledLink to="/Report">
           <StyledButton>동의</StyledButton>
-        </Link>
+        </StyledLink>
       </Container>
     </Wrapper>
   );

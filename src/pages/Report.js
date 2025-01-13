@@ -70,19 +70,20 @@ const Input = styled.textarea`
 
 const ButtonGroup = styled.div`
   display: flex;
-  justify-content: center; /* 버튼들을 중앙 정렬 */
   width: 100%;
   margin-top: 10px;
   gap: 10px;
+  display: flex;
+  flex-direction: column; /* 버튼들을 중앙 정렬 */
+  align-items: center;
 
   @media (max-width: 768px) {
-    flex-direction: column;
     gap: 10px;
   }
 `;
 
 const StyledButton = styled.button`
-  background-color: ${(props) => props.bgColor || '#4CAF50'};
+  background-color: #d3d3d3;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -97,22 +98,30 @@ const StyledButton = styled.button`
     padding: 10px 0;
   }
 
+  &#saveBtn {
+    background-color: #8339b3;
+  }
+  &#saveBtn:hover {
+    background-color: #45a049;
+  }
+
   &:hover {
-    background-color: ${(props) => props.hoverColor || '#45a049'};
+    background-color: #45a049;
   }
 `;
 
 const StyledLinkButton = styled(Link)`
   text-decoration: none;
+  text-align: center;
   color: #fff;
   background-color: #3366cc;
-  padding: 1vh 2vw;
+  border: none;
   border-radius: 8px;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
+  padding: 12px 0;
   font-size: 16px;
-  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 90%; /* 버튼들이 같은 너비로 맞춰지도록 */
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -323,12 +332,10 @@ function Report() {
         </SignatureWrapper>
 
         <ButtonGroup>
-          <StyledButton bgColor="#8339B3" onClick={handleSubmit}>
+          <StyledButton id="saveBtn" onClick={handleSubmit}>
             저장
           </StyledButton>
           <StyledButton onClick={() => window.close()}>취소</StyledButton>
-        </ButtonGroup>
-        <ButtonGroup>
           <StyledLinkButton to="/List">작성된 동의명부 보기</StyledLinkButton>
         </ButtonGroup>
       </Container>
@@ -353,10 +360,10 @@ function Report() {
             />
             <p>정보가 정확한지 확인해주세요.</p>
             <ButtonGroup>
-              <StyledButton bgColor="#4CAF50" onClick={confirmSave}>
+              <StyledButton bgcolor="#4CAF50" onClick={confirmSave}>
                 저장
               </StyledButton>
-              <StyledButton bgColor="#f44336" onClick={cancelSave}>
+              <StyledButton bgcolor="#f44336" onClick={cancelSave}>
                 취소
               </StyledButton>
             </ButtonGroup>
